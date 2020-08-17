@@ -1,0 +1,63 @@
+
+
+ .cartCard {
+    border-radius: 10px;
+    box-shadow:  5px 5px 35px #dedede, 
+                -5px -5px 35px #ffffff;
+  }
+
+  .btn ,.btn-large{ 
+    border: solid 1px white;
+  }
+
+
+
+  .row{
+      padding-top: 20px;
+  }
+
+
+
+
+
+  .moove {
+    overflow: visible;
+    position: relative;
+  }
+  
+  .moove::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, transform .3s;
+    animation: moove-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: moove-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+  }
+  
+  @keyframes moove-animation {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      opacity: 0;
+      transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+              transform: scale(1.5);
+    }
+  }

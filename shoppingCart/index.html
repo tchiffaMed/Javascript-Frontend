@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="shopping.css">
+
+    <title>Shopping Cart</title>
+
+</head>
+<body>
+
+<nav class="black">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"><i class="large material-icons">home</i> </a>
+        <a href="#" data-target = "mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">+227 001 302<i class="material-icons left">call </i></a></li>
+            <li><a href="#" class="btn transparent"><span>2</span> items - <span>$25.67</span><i class="material-icons left ">add_shopping_cart</i>  </a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile">
+        <br> <br>
+        <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#"><i class="material-icons">info_outline</i> About Us</a></li>
+        <li><a href="#"><i class="material-icons">shopping_cart</i> Store</a></li>
+</ul>
+
+<div class="row  left-align " style="height: 100vh; background: url('i/zoom.svg'); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+  <div class="container">
+  <h1>Welcome to Guma</h1>
+  <div class="col s12 l12 white-text">
+      <h1>Welcome to Guma</h1>
+      <a class="moove btn-large green">Explore</a>
+    </div>
+</div>
+</div>
+<!--About Us-->
+<div class="row">
+  <div class="container">
+    <div class="col s12 m6 l6">
+      <h3>About</h3><h2>Us</h2>
+      <a class="moove btn green">Explore</a>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam 
+        consequatur sit, voluptatibus,
+         debitis fuga quis dicta voluptatum sunt dignissimos culp
+        blanditiis ipsum sed ex placeat quae veritatis distinctio harum odit.
+      </p>
+
+      <a href="#" class="btn">Explore</a>
+    </div>
+    <div class="col s12 m6 l6">
+      <img src="i/undraw_moonlight_5ksn.svg" alt="" style="width: 100%;">
+    </div>
+  </div>
+</div>
+
+<!--Our Store-->
+
+<div class="row yellow center-align">
+    <div class="container">
+      <div class="col s12 m12">
+             <h3>Our</h3><h2>Store</h2>
+      <div class="col s12 m6 l6">
+          <a href="#" class="btn">ALL</a>
+          <a href="#" class="btn">CAKES</a>
+          <a href="#" class="btn">SWEETS</a>
+          <a href="#" class="btn">DOUGHNUTS</a>
+      </div>
+        </div> 
+
+
+      <div class="row ">
+          <form class="col s12 m12 l12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">search</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">search</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+    </div> 
+  </div>
+
+  <!--Card Row-->
+<div class="row">
+  <div class="container">
+    <!--Card List-->
+    <div class="col s12 l4">
+      <div class="card cartCard">
+        <div class="card-image">
+          <img src="i/coolness.svg">
+          <a class="btn-floating halfway-fab waves-effect waves-light white  cardActBtf"><i class="material-icons teal-text">add</i></a>
+            </div>
+
+              <div class="card-action">
+                <div class="row">
+                  <div class="col s8 l8">
+                    <h5>Sweet Item</h5>
+                      </div>
+
+                      <div class="col s4 l4 right-align">
+                          <h5>$ 1000</h5>
+                            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+      <div class="col s12 l4">
+      <div class="card cartCard">
+          <div class="card-image">
+            <img src="i/time.svg">
+            <a class="btn-floating halfway-fab waves-effect waves-light white  cardActBtf"><i class="material-icons teal-text">add</i></a>
+              </div>
+  
+                <div class="card-action">
+                  <div class="row">
+                    <div class="col s8 l8">
+                      <h5>Sweet Item</h5>
+                        </div>
+  
+                        <div class="col s4 l4 right-align">
+                            <h5>$ 1000</h5>
+                              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col s12 l4">
+        <div class="card cartCard">
+            <div class="card-image">
+              <img src="i/steps.svg">
+              <a class="btn-floating halfway-fab waves-effect waves-light white  cardActBtf"><i class="material-icons teal-text">add</i></a>
+                </div>
+    
+                  <div class="card-action">
+                    <div class="row">
+                      <div class="col s8 l8">
+                        <h5>Sweet Item</h5>
+                          </div>
+    
+                          <div class="col s4 l4 right-align">
+                              <h5>$ 1000</h5>
+                                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+  
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, {});
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

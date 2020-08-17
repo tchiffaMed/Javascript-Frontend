@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient(to right, #f857a5b4, #ff5858);
+}
+.farko{
+    background-color:#ffffff1f;
+    text-align: center;
+    width: 50%;
+    height: auto ;
+    margin:  50px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.score{
+    background-color:#ffffff1f;
+    text-align: center;
+    width: max-content;
+    height: auto ;
+    margin:  50px auto;
+    border-radius: 8px;
+}
+
+.farko h1{
+    font-family: 'Faster One', cursive;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: white;
+}
+.score h3{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+
+.trou{
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; 
+    padding: 10px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.espace{
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.espace div{
+    padding: 0.75rem;
+    border:solid 8px #f1f1f1;
+    font-size: 12em;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    background: #ffffff3d;
+    box-shadow:  -3px 3px 7px #ffeaea, 
+    3px -3px 7px #ff9cce;
+}
+
+footer {
+    color: #b4b4b4;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background: #fffbf888;
+    font-family: 'Tomorrow', sans-serif;
+
+}
+
+@media screen and (max-width:500px) {
+
+   body{
+        font-size: 0.9em;
+    }
+
+    .espace{
+        width: 100%;
+    }
+
+    .espace div{
+        width: 50px;
+        height: 50px;
+        row-gap: 10px;
+    }
+}

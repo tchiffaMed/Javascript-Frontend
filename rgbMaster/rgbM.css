@@ -1,0 +1,120 @@
+.header{
+    background-color:#07002e;
+    text-align: center;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;    
+    margin-top: -0.5rem;    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+h3{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5em;
+    color: #72E0D1;
+}
+
+.men{
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; 
+    background-color:#ff6d00 ;
+    padding: 30px;
+   
+}
+
+.menu{
+    width: 50%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.menu  a {
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1px solid #d85e01;
+    border-radius: 50px;
+    padding: 10px;
+    min-width: 80px;
+    margin-bottom: 5px;
+    background: linear-gradient(145deg, #e66200, #ff7500);
+    box-shadow:  4px 4px 9px #d15900, 
+                 -4px -4px 9px #ff8100;
+}
+
+.menu  a:hover {
+    background: linear-gradient(145deg, #ca5800, #df6800);
+    color: white; 
+}
+
+.spa{
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; 
+    background-color:#e0e0e0;
+    padding: 10px;
+   justify-content: center;
+   height: 100vh;
+}
+
+.space{
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+
+.space div{
+    padding: 0.75rem;
+    border:solid 8px #f1f1f1;
+    font-size: 12em;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    background: #469901;
+    box-shadow:  -5px 5px 15px #e4e4e4, 
+    5px -5px 15px #afafaf;
+}
+
+footer {
+    color: #b4b4b4;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background: #fffbf888;
+
+font-family: 'Tomorrow', sans-serif;
+
+}
+
+@media screen and (max-width:500px) {
+
+    h1{
+        font-size: 2em;
+    }
+    .menu{
+        width: 100%;
+    }
+
+    .space{
+        width: 100%;
+    }
+
+    .space div{
+        width: 50px;
+        height: 50px;
+    }
+}
