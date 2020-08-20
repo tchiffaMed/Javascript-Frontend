@@ -8,25 +8,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100wh;
+    min-height: 100vh;
    
 }
 
 .lokaci {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 500px;
     background-color: #091921;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(agogo.png);
+    background: url(lk.png);
     background-size: cover;
-    border: 4px solid #091921;
-    border-radius: 50%;
-    box-shadow: 0 -15Px 15Px rgba(255,255,255,0.05),
-                inset 0 -15px 15px rgba(255,255,255,0.05),
-                0 15Px 15Px rgba(0,0,0,0.03),
-                inset 0 15Px 15Px rgba(0,0,0,0.03);
+    border-radius: 3%;
+ 
 }
 
 .kala {
@@ -42,7 +38,7 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: rgb(154, 102, 46);
     border-radius: 50%;
     z-index: 10000;
 
@@ -50,29 +46,34 @@ body {
 
 .lokaci .awa ,
 .lokaci .minti,
-.lokaci .sekon 
+.lokaci .sekon,
+.lokaci .lamba
 {
     position: absolute;
 }
 
 .lokaci .awa, .hr {
-    width: 160px;
-    height: 160px;
-}
-
-
-.lokaci .minti, .mn {
     width: 190px;
     height: 190px;
 }
 
-.lokaci .sekon, .sc {
-    width: 230px;
-    height: 230px;
+
+.lokaci .minti, .mn {
+    width: 260px;
+    height: 250px;
 }
 
+.lokaci .sekon, .sc {
+    width: 300px;
+    height: 300px;
+}
 
-.hr, .mn, .sc {
+.lokaci .lamba, .lamb {
+    width: 200px;
+    height: 100px;
+}
+
+.hr, .mn, .sc , .lamb{
     display: flex;
     justify-content: center;
     /*align-items: center;*/
@@ -80,14 +81,21 @@ body {
     border-radius: 50%;
 }
 
+.lamb{
+    top: 42%;
+    left: 70%;
+    box-shadow:  5px 5px 20px #c0c0c0, 
+             -5px -5px 20px #b9b9b9;
+}
+
 .hr:before {
     content: '';
     position: absolute;
     width: 8px;
-    height: 80px;
-    background: #ff105e;
+    height: 100px;
+    background: linear-gradient(to left top, #ff512f, #f09819);    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); 
     border-radius: 50%;
-    z-index: 10;
+    z-index: 11;
     border-radius: 6px 6px 0 0;
 }
 
@@ -95,10 +103,11 @@ body {
     content: '';
     position: absolute;
     width: 4px;
-    height: 90px;
-    background: #fff;
+    height: 120px;
+    background: linear-gradient(to left top, #c21500, #ffc500);    
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    z-index: 11;
+    z-index: 12;
     border-radius: 6px 6px 0 0;
 }
 
@@ -106,10 +115,20 @@ body {
     content: '';
     position: absolute;
     width: 2px;
-    height: 150px;
-    background: #fff;
-    border-radius: 50%;
-    z-index: 12;
+    height: 185px;
+    background: linear-gradient(to right top, #c21500, #ffc500);    border-radius: 50%;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    z-index: 13;
     border-radius: 6px 6px 0 0;
 }
 
+.lamb{
+ 
+    position: relative;
+    width: 70px;
+    height: 25px;
+    background: linear-gradient(to right top, #c21500, #ffc500);    border-radius: 50%;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    border-radius: 6px 6px;
+}

@@ -1,8 +1,8 @@
 
     const deg = 6;
-    const hr = document.querySelector("hr");
-    const mn = document.querySelector("mn");
-    const sc = document.querySelector("sc");
+    const hr = document.querySelector(".hr");
+    const mn = document.querySelector(".mn");
+    const sc = document.querySelector(".sc");
 
 
     setInterval(()  => {
