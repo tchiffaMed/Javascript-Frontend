@@ -11,8 +11,7 @@
     <title>Lokaci</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col">
+
 
             <div class="lokaci kala">
 
@@ -40,8 +39,6 @@
                                                 </div>
             </div>   
 
-        </div>
-    </div>
 
 <script type="text/javascript">
     function lamb(){
@@ -54,11 +51,15 @@
         lambaSeconds.innerHTML = new Date().getSeconds();
     }
     let interval =  setInterval(lamb, 1000);
-
-    function play(){
-        let audio = new Audio('sound.mp3');
-        audio.addEventListener('new Date().getSeconds()')
-    }
+    d = new Date().getSeconds();
+    let audio = new Audio('sound.mp3');
+if( d < 60) {
+    
+        audio.play();
+}
+        
+     
+   
 </script>
 
 
