@@ -15,19 +15,27 @@
     <div class="timer">
             <div class="back1">
         <div class="time">
-                <button class="option1" >20 sec</button>
-                <button class="option2" >Etirement 5mn</button>
-                <button class="option3" >Chayi 15mn</button>
-                <button class="option4" >Dambou 20mn</button>
-                <button class="option5" >Dejeuner 30mn</button>
+                <button data-time='20' class="option1" >20 sec</button>
+                <button data-time='300' class="option2" >Etirement 5mn</button>
+                <button data-time='900' class="option3" >Chayi 15mn</button>
+                <button data-time='1200' class="option4" >Dambou 20mn</button>
+                <button data-time='3600' class="option5" >Dejeuner 30mn</button>
         </div>
     </div>
     <div class="but1">
-           <p> 4 : 51  <i class="material-icons">notifications_off</i> </p> 
-              <button class="selection" >Enter time in minute</button>
-                 <h3>Be back at 0 : 50</h3>
+               <div class="display">
+                    <p class="display__time-left"></p>
+                    <p class="display__end-time"></p>
+                    <i class="material-icons">notifications_off</i>
+
+                </div> 
+                
+           <form name="customForm" id="custom" >
+               <input type="text" class="selection" name="minutes" placeholder="Enter time in minute">
+           </form>
     </div>
 
+    
     </div>
 
     <footer>
@@ -36,6 +44,6 @@
         
 
 
-        <script type="text/javascript" src="agogo.js"></script>
+        <script src="agogo.js"></script>
 </body>
 </html>

@@ -50,14 +50,15 @@
         lambaMinutes.innerHTML = new Date().getMinutes() + ' : ';
         lambaSeconds.innerHTML = new Date().getSeconds();
     }
-    let interval =  setInterval(lamb, 1000);
-    d = new Date().getSeconds();
-    let audio = new Audio('sound.mp3');
-if( d < 60) {
+   
     
-        audio.play();
-}
-        
+    setInterval(() => {
+            let audio = new Audio('sound.mp3');
+            audio.play();
+    }, 20000)
+    
+  
+    
      
    
 </script>

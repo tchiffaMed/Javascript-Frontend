@@ -32,7 +32,7 @@ body{
     font-family: 'Play', sans-serif;
 }
 
-button:hover{
+button:hover, input:hover{
     
     background-image: linear-gradient(to left bottom, #e38545, #e0873d, #dc8a34, #d88c2b, #d38f21, #c67f24, #b96f26, #aa6127, #86432b, #5c2b28, #31191c, #272727);    
     color: #fff;
@@ -50,6 +50,7 @@ button:hover{
 .but1 .selection{
     font-size: large;
     padding:20px;
+    color: ivory;
     font-family: 'Play', sans-serif;
     background-color: #E38545;
     border: none;
@@ -64,12 +65,10 @@ button:hover{
 }
 
 
-.but1 p {
-    display: flex;
-    justify-content: center;
+.but1 .display {
+    
     padding: 0.75rem;
     border:solid 8px #f1f1f1;
-    font-size: 12em;
     border-radius: 8px;
     margin: 200px auto;
     width: fit-content;
@@ -78,7 +77,17 @@ button:hover{
     19px -19px 38px #ffffff;
 }
 
+.but1 .display .display__time-left{
+    font-size: 5em;
+}
 
+::placeholder{
+    color: rgb(248, 248, 224);
+}
+
+*:focus{
+    outline: 0;
+}
 
 footer {
     color: #b4b4b4;
