@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      
+    <link rel="stylesheet" href="lokaci.css">
+    <title>Lokaci</title>
+</head>
+<body>
+
+
+            <div class="lokaci kala">
+
+                    <div class="lamba">
+                            <div class="lamb" id="lamb" style="font-size: 14px;color: rgb(251, 232, 207); align-items: center;">
+                                <span id="lambaHours">00 : </span> <br>
+                                <span id="lambaMinutes"> 00 </span> <br>
+                                <span id="lambaSeconds"> 00 </span>
+                            </div>
+                        </div>
+
+                            <div class="awa">
+                                <div class="hr" id="hr">
+                                </div>
+                            </div>
+
+                                    <div class="minti">
+                                        <div class="mn" id="mn">
+                                        </div>
+                                    </div>
+
+                                                <div class="sekon">
+                                                    <div class="sc" id="sc">
+                                                    </div>
+                                                </div>
+            </div>   
+
+
+<script type="text/javascript">
+    
+//montre numerique et son de l'aiguille
+
+function lamb(){
+            let lambaHours = document.getElementById('lambaHours');
+            let lambaMinutes = document.getElementById('lambaMinutes');
+            let lambaSeconds = document.getElementById('lambaSeconds');
+    
+            lambaHours.innerHTML = new Date().getHours() + ' : ';
+            lambaMinutes.innerHTML = new Date().getMinutes() + ' : ';
+            lambaSeconds.innerHTML = new Date().getSeconds();
+        }
+       let audio = new Audio('i/sound.mp3');
+      setInterval(() => {
+                lamb();
+                audio.play();
+        }, 1000)
+        
+</script>
+
+
+
+<script src="lokaci.js"></script>
+</body>
+</html>
