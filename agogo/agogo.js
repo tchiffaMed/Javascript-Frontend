@@ -1,21 +1,21 @@
 let countdown;
-const timerDisplay = document.querySelector('.display__time-left');
-const endTime = document.querySelector('.display__end-time');
-const buttons = document.querySelectorAll('[data-time]');
+const timerLeft = document.querySelector('.time-left');
+const endTime = document.querySelector('.end-time');
+const bouttonsTemps = document.querySelectorAll('[data-time]');
 
-function timer(seconds) {
-    //clear any existingtimers
+function timer(donneeEnSeconds) {
+    //reinitialisationn du decompteur
     clearInterval(countdown);
 
+   const tempsActuel = Date.now();
+   const tempsLimite = tempsActuel + donneeEnSeconds * 1000;
 
-   const now = Date.now();
-   const then = now + seconds * 1000;
-   displayTimeLeft(seconds);
-   displayEndTime(then);
+   displayTimeLeft(donneeEnSeconds);
+   displayEndTime(tempsLimite);
 
 
   countdown = setInterval(() => {
-        const secondsLeft = Math.round((then - Date.now()) / 1000);
+        const secondsLeft = Math.round((tempsLimite - Date.now()) / 1000);
         // creer un arret
          if(secondsLeft < 0) {
              clearInterval(countdown);
@@ -27,35 +27,37 @@ function timer(seconds) {
 }
 
 
-function displayTimeLeft(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const remainderSeconds = seconds % 60;
+function displayTimeLeft(donneeEnSeconds) {
+    const minutes = Math.floor(donneeEnSeconds / 60);
+    const remainderSeconds = donneeEnSeconds % 60;
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : '' }${remainderSeconds}`;
     document.title = display;
-    timerDisplay.textContent = display;
+    timerLeft.textContent = display;
 
 }
 
-function displayEndTime(timestamp) {
-    const end = new Date(timestamp);
+function displayEndTime(x) {
+    const end = new Date(x);
     const hour = end.getHours();
     const adjustedHour = hour > 12 ? hour - 12 : hour;
     const minutes = end.getMinutes();
     let returnBack = `${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
     let returnBackColor = returnBack.fontcolor('blue')
-    endTime.textContent = `Be Back At `  +  returnBack;
+    endTime.textContent = `Vous serrez notifié à `  +  returnBack;
 }
 
 function startTimer() {
-    const seconds = parseInt(this.dataset.time);
-    timer(seconds);
+    const donneeEnSeconds = parseInt(this.dataset.time);
+    timer(donneeEnSeconds);
 }
 
-buttons.forEach(button => button.addEventListener('click', startTimer));
+bouttonsTemps.forEach(button => button.addEventListener('click', startTimer));
+
 document.customForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const mins = this.minutes.value;
-    console.log(mins);
     timer(mins * 60);
-    this.reset();
+
+    // console.log(mins);
+    // this.reset();
 });

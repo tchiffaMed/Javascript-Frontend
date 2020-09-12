@@ -1,3 +1,5 @@
+//montre analogique
+
 
     const deg = 6;
     const hr = document.querySelector(".hr");
@@ -17,3 +19,4 @@
     sc.style.transform = `rotateZ(${ss}deg)`;
 
         })
+

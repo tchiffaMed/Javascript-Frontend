@@ -11,31 +11,35 @@
 <body>
     <div class="header">
             <h3>Guess the color</h3>
-            <h1>rgb(178, 166, 142)</h1>
+            <h1 id="afficheResult">rgb(178, 166, 142)</h1>
+            <p id="status"><img src="surprised.svg" alt=""></p>
     </div>
+
     <div class="men">
-        <div class="menu">
-            <a href="#">New colors</a>  
-            <a href="#">Easy</a>    
-            <a href="#">Hard</a> 
-        </div>
-          
+        <div class="menu" id="strip">
+            <a href="#" id="reset">New colors</a> 
+            
+            <a href="#" class="mode" id="easy">Easy</a>    
+            <a href="#" class="mode selected" id="hard" class="selected">Hard</a> 
+        </div>  
     </div>
+
     <div class="spa">
         <div class="space">
-                <div class="cl1"></div>
-                    <div class="cl2"></div>
-                        <div class="cl3"></div>
-                            <div class="cl4"></div>
-                                <div class="cl5"></div>
-                                    <div class="cl6"></div>
+                <div class="cl1 colorCase"></div>
+                    <div class="cl2 colorCase"></div>
+                        <div class="cl3 colorCase"></div>
+                            <div class="cl4 colorCase"></div>
+                                <div class="cl5 colorCase"></div>
+                                    <div class="cl6 colorCase"></div>
         </div>
     </div>
+  
 
     
     <footer>
         <p>Copyright &copy; tchiffaMed  &nbsp; | &nbsp; rgbMaster  &nbsp; | &nbsp; 2020</p>
     </footer>
-
+<script src="rgbM.js"></script>
 </body>
 </html>

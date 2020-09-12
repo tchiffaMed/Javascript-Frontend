@@ -1,3 +1,13 @@
+html{
+    height: 100%;
+}
+
+body{ 
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .header{
     background-color:#07002e;
     text-align: center;
@@ -13,6 +23,20 @@ h1{
     text-transform: uppercase;
     font-size: 2.5em;
     color: white;
+}
+#afficheResult{
+    font-size: 200%;
+}
+
+
+#status {
+    display: inline-block;
+    width: 60px;
+    color: white;
+    font-size: 0.6rem;
+}
+img {
+    width: 40Px;
 }
 h3{
     font-family: 'Baloo 2', cursive;
@@ -48,6 +72,10 @@ h3{
     background: linear-gradient(145deg, #e66200, #ff7500);
     box-shadow:  4px 4px 9px #d15900, 
                  -4px -4px 9px #ff8100;
+
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
 }
 
 .menu  a:hover {
@@ -84,18 +112,21 @@ h3{
     background: #469901;
     box-shadow:  -5px 5px 15px #e4e4e4, 
     5px -5px 15px #afafaf;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
 }
 
 footer {
     color: #b4b4b4;
-    position: fixed;
+    /* position: absolute; */
     text-align: center;
-    bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
+    padding: 3px;
     border: none;
     background: #fffbf888;
-
+ margin-top: auto;
 font-family: 'Tomorrow', sans-serif;
 
 }
@@ -107,6 +138,9 @@ font-family: 'Tomorrow', sans-serif;
     }
     .menu{
         width: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 10px;
     }
 
     .space{

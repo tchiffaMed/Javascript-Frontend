@@ -7,7 +7,7 @@ header{
         text-align: right;
 
 }
-header .material-icons{
+header .material-icons, .hed{
     font-size: 100px;
     margin-left: 20px;
     background: linear-gradient(145deg, #d2876e, #f9a183);
@@ -17,7 +17,7 @@ header .material-icons{
     -webkit-background-clip: text;
     -webkit-text-fill-color: #ffffff;
 }
-header .material-icons{
+header .material-icons, .hed{
     animation: logo 2s linear infinite;
 }
 
@@ -61,7 +61,7 @@ header .material-icons{
 .cli a {
     font-size: large;
     padding:20px 40px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Mitr', sans-serif;
     background: rgba(255, 255, 255, .1);
     text-transform: uppercase;
     text-decoration: none;
@@ -69,6 +69,7 @@ header .material-icons{
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
     position: relative;
+
 }
 
 .cli a:before {
@@ -78,7 +79,7 @@ header .material-icons{
     left: 0;
     width: 50%;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, 0);
 
 }
 

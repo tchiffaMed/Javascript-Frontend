@@ -17,9 +17,9 @@
 
                     <div class="lamba">
                             <div class="lamb" id="lamb" style="font-size: 14px;color: rgb(251, 232, 207); align-items: center;">
-                                <span id="lambaHours">00:</span> <br>
-                                <span id="lambaMinutes">00 </span> <br>
-                                <span id="lambaSeconds">00</span>
+                                <span id="lambaHours">00 : </span> <br>
+                                <span id="lambaMinutes"> 00 </span> <br>
+                                <span id="lambaSeconds"> 00 </span>
                             </div>
                         </div>
 
@@ -41,26 +41,24 @@
 
 
 <script type="text/javascript">
-    function lamb(){
-        let lambaHours = document.getElementById('lambaHours');
-        let lambaMinutes = document.getElementById('lambaMinutes');
-        let lambaSeconds = document.getElementById('lambaSeconds');
+    
+//montre numerique et son de l'aiguille
 
-        lambaHours.innerHTML = new Date().getHours() + ' : ';
-        lambaMinutes.innerHTML = new Date().getMinutes() + ' : ';
-        lambaSeconds.innerHTML = new Date().getSeconds();
-    }
-   
+function lamb(){
+            let lambaHours = document.getElementById('lambaHours');
+            let lambaMinutes = document.getElementById('lambaMinutes');
+            let lambaSeconds = document.getElementById('lambaSeconds');
     
-    setInterval(() => {
-            let audio = new Audio('sound.mp3');
-            audio.play();
-    }, 20000)
-    
-  
-    
-     
-   
+            lambaHours.innerHTML = new Date().getHours() + ' : ';
+            lambaMinutes.innerHTML = new Date().getMinutes() + ' : ';
+            lambaSeconds.innerHTML = new Date().getSeconds();
+        }
+       let audio = new Audio('i/sound.mp3');
+      setInterval(() => {
+                lamb();
+                audio.play();
+        }, 1000)
+        
 </script>
 
 

@@ -1,40 +1,52 @@
-import { parseExpression } from "@babel/parser";
-
-const holes = document.querySelectorAll('.hole');
-const scorreBoard = document.querySelector('.score');
-const moles = document.querySelectorAll('.MOLE');
-let lastHole;
+const cubes = document.querySelectorAll('.cube');
+const scoreBoard = document.querySelector('.score');
+const lappins = document.querySelectorAll('.lappin');
+let lastcube;
 let timeUp = false;
 let score = 0;
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
-
 }
-function randomHole(holes) {
-    const idx = Math.floor(Math.random() * holes.lenght);
-    const hole = randomHole(holes);
-    hole.classList.add('up');
-    setTimeout(()  => {
-        hole.classList.remove('up');
-        if(!timeUp) peep();
 
+function randomcube(cubes) {
+    const idx = Math.floor(Math.random() * cubes.length);
+    const cube = cubes[idx];
+    if (cube === lastcube) {
+        // console.log('existe ...')
+        return randomcube(cubes);
+    }
+    lastcube = cube;
+    return cube;
+}
+
+
+function pop() {
+    const time = randomTime(200, 1000);
+    const cube = randomcube(cubes);
+    cube.classList.add('up');
+    setTimeout(() => {
+         cube.classList.remove('up');
+    if (!timeUp) pop();
     }, time);
 }
 
 function startGame() {
-    scorreBoard.textContent = 0 ;
+    scoreBoard.textContent = '0';
     timeUp = false;
     score = 0;
-    peep();
-    setTimeout(()  =>  timeUp = true, 1000)
+ 
+    pop();
+    setTimeout(() => timeUp = true, 20000)
+}
+function attrape(e) {
+    if(!e.isTrusted) return ;
+     score++;
+        this.parentNode.classList.remove('up');
+        scoreBoard.textContent = score;
+    
 }
 
-function bonk(e) {
-    if(!e.isTrusted) return; //triche
-    score++;
-    this.parentNode.classList.remove('up');
-    scoreBoard.textContent =  score;
-}
 
-moles.foreEach(mole => mole.addEventListener('clisck, bonk'));
+
+lappins.forEach(lappin  => lappin.addEventListener('click', attrape));

@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game Hangman</title>
-    <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="css/hangman.css">
+
+    <style>
+    
+    
+    </style>
 </head>
 <body>
+        <div class="all" style="max-width: 70%; margin: auto; text-align: center;">
+            <h1 class="center-align white-text"> <span class="transparent hang">Hangman</span> </h1>
+                <p>Guess the programming language</p>
+
+                <p class="right"><span id="on">right Guesses &nbsp;: </span> 
+                    <span id="simpl">
+                        <span id="trouv">0 </span> /  <span id="total">0 </span>
+                    </span> 
+                </p>
+
+                <p class="right"><span id="miss">wrong Guesses : </span>
+                    <span id="like" >
+                       <span id="mistakes">0 </span>  /  <span id="maxWrong">0 </span>
+                    </span>
+                </p>
+
+                <canvas id="canvas"></canvas>
+
+              <span id="message" class="message"></span>
+
+              <p class="" id="wordSpotlight">The word to be guessed goes here</p>
+
+                <div class="clav" style="width:200px">
+                    <div class="clavier" id="keyboard"></div>
+                </div>
+            <button class=" reset" id="refresh">Nouvel partie</button>
+        </div>
+    </div>
     
+  <p></p>
+    
+    <script src="js/hangman.js"></script>
 </body>
 </html>
