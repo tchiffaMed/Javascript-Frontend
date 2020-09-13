@@ -1,3 +1,12 @@
+
+
+html{
+
+    height: 100%;
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +18,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-   
+    height: 100%;
+    flex-direction: column;
 }
 
 .lokaci {
     width: 400px;
     height: 500px;
+    margin-top: 30vh;
     background-color: #091921;
     display: flex;
     justify-content: center;
@@ -136,6 +147,25 @@ body {
 
     font-family: 'digitalMono';
 }
+
+
+
+
+footer {
+    color: #d5d4d4;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    background: #dad5d188;
+    padding: 8px;
+    text-align: center;
+    margin-top: auto;
+    
+    font-family: 'Tomorrow', sans-serif;
+    }
+
+
+
 
 @font-face{
     font-family: 'digitalMono';
