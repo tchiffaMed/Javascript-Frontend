@@ -21,17 +21,17 @@ body {
   color: var(--mainPink);
 }
 .nav-link {
-  color: var(--mainPink);
+  color: black;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 .nav-link:hover {
-  color: var(--mainBlack);
+  color: #6200ea !important;
 }
 /* end of nav links */
 /* info icons */
 .cart-info__icon {
-  color: var(--mainBlack);
+  color:  #6200ea !important;
   cursor: pointer;
 }
 
@@ -39,11 +39,12 @@ body {
   border: 0.1rem solid var(--mainBlack);
   color: var(--mainBlack);
   border-radius: 0.25rem;
+  border-color:  #6200ea !important;
   padding: 0.4rem 0.6rem;
   cursor: pointer;
 }
 .cart-info:hover {
-  background: var(--mainPink);
+  background:  #6200ea !important;
   border-color: var(--mainPink);
   color: var(--mainWhite);
 }
@@ -55,8 +56,8 @@ body {
 
 .max-height {
   min-height: calc(100vh - 76px);
-  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+  background: /*linear-gradient(var(--yellowTrans), var(--yellowTrans)), */
+    url("../i/zoom.svg") left/cover fixed no-repeat;
   position: relative;
 }
 .banner {
@@ -64,17 +65,19 @@ body {
   margin-top: -4rem;
 }
 .banner-title {
-  color: var(--mainPink);
+  color: #6200ea !important;
   font-size: 4rem;
+  font-family: 'Stay';
 }
 .banner-link {
   font-size: 1.5rem;
-  color: var(--mainBlack);
+  color: white;
   border: 0.2rem solid var(--mainBlack);
+  background: #6200ea !important;
 }
 .banner-link:hover {
-  background: var(--mainBlack);
-  color: var(--mainPink);
+  background: white !important;
+  color: #6200ea !important;
 }
 /* endo of banner */
 /* cart  */
@@ -119,15 +122,15 @@ body {
 }
 .btn-black {
   color: var(--mainBlack) !important;
-  border-color: var(--mainBlack) !important;
+  border-color: #6200ea !important
 }
 .btn-black:hover {
-  color: var(--mainPink) !important;
-  background: var(--mainBlack) !important;
+  background: #6200ea !important;
+  color: white !important;
 }
 .btn-pink:hover {
-  background: var(--mainPink) !important;
-  color: var(--mainBlack) !important;
+  background: #6200ea !important;
+  color: white !important;
 }
 /* end of cart buttons */
 
@@ -190,8 +193,8 @@ body {
 }
 /*end of  store items */
 .search-box {
-  background: var(--mainPink);
-  color: var(--mainBlack);
+  background:  #6200ea !important;
+  color:white !important;
 }
 
 /* ligthbox */
@@ -247,4 +250,11 @@ body {
   top: 50%;
   right: 0;
   transform: translateX(60%);
+}
+
+
+
+@font-face{
+  font-family: 'Stay';
+  src: url('Stay.otf');
 }
