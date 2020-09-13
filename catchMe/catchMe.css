@@ -54,6 +54,7 @@ height: auto ;
 background-color:#ffffff1f;
 text-align: center;
 width: fit-content;
+padding: 4px;
 height: auto ;
 margin:  50px auto;
 border-radius: 8px;
@@ -73,7 +74,7 @@ width: auto;
 color: rgb(255, 255, 255);
 font-family: 'Faster One', cursive;
 display: block;
-margin: auto;
+margin: 20px auto;
 background: linear-gradient(to right, #ff512f, #dd2476);
 border-radius: 8px;
 outline: none;
@@ -151,6 +152,10 @@ body{
  margin: 70px auto;
 }
 
+button {
+   font-size: smaller;
+   margin: 2px auto;
+}
 .cube{
  width: 50px;
  height: 130px;
