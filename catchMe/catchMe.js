@@ -22,7 +22,7 @@ function randomcube(cubes) {
 
 
 function poop() {
-    const time = randomTime(900, 1000);
+    const time = randomTime(50, 1000);
     const cube = randomcube(cubes);
     cube.classList.add('up');
     setTimeout(() => {
