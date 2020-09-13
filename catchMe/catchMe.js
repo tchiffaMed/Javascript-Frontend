@@ -21,13 +21,13 @@ function randomcube(cubes) {
 }
 
 
-function pop() {
-    const time = randomTime(200, 1000);
+function poop() {
+    const time = randomTime(900, 1000);
     const cube = randomcube(cubes);
     cube.classList.add('up');
     setTimeout(() => {
          cube.classList.remove('up');
-    if (!timeUp) pop();
+    if (!timeUp) poop();
     }, time);
 }
 
@@ -36,17 +36,20 @@ function startGame() {
     timeUp = false;
     score = 0;
  
-    pop();
+    poop();
     setTimeout(() => timeUp = true, 20000)
 }
+
+
 function attrape(e) {
     if(!e.isTrusted) return ;
      score++;
-        this.parentNode.classList.remove('up');
+        e.target.parentNode.classList.remove('up');
         scoreBoard.textContent = score;
-    
+ console.log(this);
+ console.log
 }
 
+ 
+lappins.forEach(fr  => fr.addEventListener('click', attrape)); 
 
-
-lappins.forEach(lappin  => lappin.addEventListener('click', attrape));

@@ -1,75 +1,4 @@
 html{
-    height: 100%;
-}
-
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.farko{
-    background-color:#ffffff1f;
-    text-align: center;
-    width: 50%;
-    height: auto ;
-    margin:  50px auto;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.compteur{
-    background-color:#ffffff1f;
-    text-align: center;
-    width: max-content;
-    height: auto ;
-    margin:  50px auto;
-    border-radius: 8px;
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    box-sizing: border-box;
-}
-
-.farko h1{
-    font-family: 'Faster One', cursive;
-    text-transform: uppercase;
-    font-size: 4em;
-    color: white;
-}
-
-/* *, *:before, *:after {
-    box-sizing: inherit;
-} */
-
-.trou{
-    margin-left: -0.5rem;
-    margin-right: -0.5rem; 
-    padding: 10px;
-    justify-content: center;
-    height: 100vh;
-}
-
-a {
-    font-size: large;
-    text-align: center;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    width: 90px;
-    font-family: 'Faster One', cursive;
-    display: block;
-    margin: auto;
-    background: linear-gradient(to right, #ff512f, #dd2476);
-    border-radius: 15px;
-    outline: none;
-
-}
-a:hover{
-    box-shadow: 0px 8px 10px rgba(59, 58, 58, 0.4);
-}
-
-
-html{
     box-sizing: border-box;
     font-size: 10px;
     height: 100%;
@@ -172,20 +101,19 @@ border:solid 8px #f1f1f1;
 
 .cube:after{
     display: block;
-    background: url(.svg) bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
     height: 80px;
     position: absolute;
     z-index: 2;
-    bottom: -10px;
+    bottom: -30px;
     
 }
 
 .lappin{
-    background: url('lab.png') bottom center no-repeat;
-    background-size: 60%;
+    background: url('lap.png') bottom center no-repeat;
+    background-size: 75%;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -228,62 +156,3 @@ body{
  height: 130px;
 }
 }
-
-/* .espace{
-    width: 50%;
-    height: 250px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 50px;
-    justify-items: center;
-    border: black 1px dashed;
-    
-} */
-
-
-footer {
-    color: #9e9e9e;
-    width: 100%;
-    border: none;
-    background: #dad5d188;
-    padding: 8px;
-    text-align: center;
-    margin-top: auto;
-
-font-family: 'Tomorrow', sans-serif;
-}
-
-@media screen and (max-width:500px) {
-
-   body{
-        font-size: 0.9em;
-    }
-
-    .espace{
-        width: 100%;
-        margin: 70px auto;
-    }
-
-    .espace div{
-        width: 50px;
-        height: 50px;
-        row-gap: 10px;
-    }
-}
-
-
-
-/* .espace div{
-
-    padding: 0.75rem;
-    border:solid 8px #f1f1f1;
-    font-size: 12em;
-    border-radius: 8px;
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-    background: #ffffff3d;
-    box-shadow:  -3px 3px 7px #ffeaea, 
-    3px -3px 7px #ff9cce;
-} */
