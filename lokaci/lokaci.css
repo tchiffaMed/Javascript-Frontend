@@ -177,4 +177,8 @@ footer {
   footer {
     height:40px;
   }
+  .lamb{
+      padding-top: 3px;
+      padding-left: 3px;
+  }
 }
