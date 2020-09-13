@@ -146,7 +146,7 @@ body {
   right: -1.7rem;
   width: 100%;
   height: 100%;
-  outline: 0.5rem solid var(--mainYellow);
+  outline: 0.5rem solid #6200eaa1 !important;;
   z-index: -1;
   transition: all 1s ease-in-out;
 }
@@ -177,7 +177,7 @@ body {
   bottom: 0;
   right: 0;
   padding: 0.75rem;
-  background: var(--mainYellow);
+  background: #6200ea !important;
   border-top-left-radius: 1rem;
   transition: all 1s ease-in-out;
   transform: translate(100%, 100%);

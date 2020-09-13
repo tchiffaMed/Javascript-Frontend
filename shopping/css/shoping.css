@@ -16,12 +16,18 @@
 .B{
 color: #6200ea;
 font-family: 'Eagle Lake', cursive;
+font-size: 100px;
 }
 
 .C{
     font-family: 'Stay';
 }
 
+.toggler-icon, .fa-bars{
+    color: #6200ea !important;
+    
+
+}
 @font-face{
     font-family: 'Mightype';
     src: url('Mightype.otf');
