@@ -50,27 +50,22 @@ button:hover, input:hover{
 .but1 .selection{
     font-size: large;
     padding:20px;
+    margin-top: 10px;
     color: ivory;
     font-family: 'Play', sans-serif;
     background-color: #E38545;
-    border: none;
+    border: solid 2px #ffbb8e4f;
     border-radius: 5px;
-    box-shadow:  20px 20px 60px  #ffbb8e85, 
-                -20px -20px 60px #ffbb8e85;
+    box-shadow:  20px 20px 60px  #ffbb8e20, 
+                -20px -20px 60px #ffbb8e33;
 }
-
-.material-icons{
-    font-size: 40px;
-    color: #999999;
-}
-
 
 .but1 .display {
     
     padding: 0.75rem;
     border:solid 8px #f1f1f1;
     border-radius: 8px;
-    margin: 200px auto;
+    margin: 120px auto;
     width: fit-content;
     background: #f7f7f7;
     box-shadow:  -19px 19px 38px #dedede, 
@@ -78,7 +73,9 @@ button:hover, input:hover{
 }
 
 .but1 .display .time-left{
-    font-size: 5em;
+    font-size: 5em; 
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 ::placeholder{
@@ -88,6 +85,35 @@ button:hover, input:hover{
 *:focus{
     outline: 0;
 }
+
+
+
+
+
+.notification{
+    animation: shake .1s ease-in-out .1s infinite alternate;
+    -webkit-animation: shake .1s ease-in-out .1s infinite alternate;
+}
+ @keyframes shake {
+    from{
+        transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+    }
+    to{
+        transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+
+        transform-origin: center
+        center;
+        -webkit-transform-origin: center
+        center;
+    }
+}
+
+
+
+
+
 
 footer {
     color: #b4b4b4;
@@ -103,5 +129,8 @@ font-family: 'Tomorrow', sans-serif;
 
 }
 
-
-
+#gradientSvg {
+        --color-stop-1: #00c3ff;
+        --color-stop-2: #77e190;
+        --color-stop-3: #ffff1c;
+  }
