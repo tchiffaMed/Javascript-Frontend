@@ -147,7 +147,6 @@ function handleGuess(choosenLetter){
             ctx.moveTo(140, 90);
             ctx.lineTo(160, 100);
             ctx.stroke();     
-            alert('Vous avez perdu la partie !!')    
         break;
         default: alert('Vous avez perdu la partie !!')
 

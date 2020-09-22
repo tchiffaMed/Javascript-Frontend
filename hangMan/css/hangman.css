@@ -116,7 +116,13 @@ display: none;
 }
 
 #canvas{
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)}
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    display: block;
+    margin: 13px auto;
+    background: rgba(255, 255, 255, 0.684);
+    box-shadow:  20px 20px 60px  #b5b5b513, 
+                -20px -20px 60px #a4a4a418;}
 @font-face {
     font-family: 'Mitr-ExtraLight';
     src: url('i/Mitr-ExtraLight.ttf');
