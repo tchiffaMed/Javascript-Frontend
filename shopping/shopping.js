@@ -4,7 +4,7 @@
 const cartInfo = document.getElementById('cart-info');
 const cart = document.getElementById('cart');
 
-cartInfo.addEventListener('click', function() {
+    cartInfo.addEventListener('click', function() {
     cart.classList.toggle('show-cart');
 });
 
@@ -16,15 +16,25 @@ cartInfo.addEventListener('click', function() {
 
     cartBtn.forEach(function(btn) {
         btn.addEventListener('click', function(event){
+//cibler l'image
            let imageCard = event.target.parentElement.previousElementSibling; 
-           imageCard =imageCard.getAttribute('src');
+
+           imageCard = imageCard.getAttribute('src');
+
            let p = event.target.parentElement.parentElement.nextElementSibling.children[0];
+//cibler le nom
            let name = p.children[0].textContent;
+//cibler le prix
            let prix = parseInt(p.children[1].children[0].textContent);
+
            const harira = document.getElementById('harira');
+
            harira.children[0].textContent= parseInt(harira.children[0].textContent)+ 1;
+
            harira.children[1].textContent= parseInt(harira.children[1].textContent) + prix;
+// afficher le produit
            let mhd = document.getElementById('mhd');
+
            mhd.innerHTML+=`
            <div class="cart-item d-flex justify-content-between text-capitalize my-3">
                 <img src=${imageCard} class="img-fluid rounded-circle item-img" id="item-img" alt="">
@@ -40,8 +50,8 @@ cartInfo.addEventListener('click', function() {
                 </a>
               </div>
            `;
-           console.log();
-           
+            console.log();
+            
             // if(event.target.parentElement.classList.contains('store-item-icon')) {
             //     let fullPath = event.target.parentElement.previousElementSibling.src;
             //     let pos = fullPath.indexOf('img') + 3;
@@ -91,6 +101,7 @@ cartInfo.addEventListener('click', function() {
             // }
         });
     });
+
 
     function showTotals() {
         const total = [];

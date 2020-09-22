@@ -18,6 +18,7 @@ let mistakes = document.getElementById('mistakes');
 let trouvee =0;
 let guessed = [];
 wordStatus = null;
+let compteur = 0;
 
 
 let refresh = document.getElementById('refresh');
@@ -54,7 +55,8 @@ document.getElementById('keyboard').innerHTML = buttonskeyBoard;
 
 }
 
-
+            let ctx = canvas.getContext('2d');
+                ctx.lineWidth = 6;
 function handleGuess(choosenLetter){
     guessed.indexOf(choosenLetter) === -1 ? guessed.push(choosenLetter) : null;
     // document.getElementById(choosenLetter).setAttribute('disabled', true);
@@ -63,11 +65,92 @@ function handleGuess(choosenLetter){
         trouvee++;
         guessWord();
         checkIfGamewon();
+        console.log(trouvee);
     } else if(answer.indexOf(choosenLetter) === -1){
         errors++;
         updateMistakes();
         checkIfGameLost();
         // updateHangmanPicture();
+    }
+    
+    switch(errors){
+        case 0:
+        break;
+        case 1:
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgb(150,195,11)';
+            ctx.moveTo(60,130);
+            ctx.lineTo(243, 130);
+            ctx.stroke();
+        break;
+
+        case 2:
+            ctx.beginPath();
+            ctx.strokeStyle = 'orange';
+            ctx.moveTo(240, 20);
+            ctx.lineTo(240, 130);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgb(252,122,7)';
+            ctx.moveTo(137, 20);
+            ctx.lineTo(243, 20);
+            ctx.stroke();
+        break;
+
+        case 3:
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgb(226,47,111)';
+            ctx.moveTo(140, 20);
+            ctx.lineTo(140, 50);
+            ctx.stroke();
+        break;
+
+        case 4:
+            ctx.beginPath();
+            ctx.arc(140, 50, 11, 0, Math.PI*2,true);
+            ctx.closePath();
+            ctx.fillStyle = 'rgb(246,97,15)';
+            ctx.fill();
+        break;
+
+
+        case 5:
+            ctx.beginPath();
+            ctx.strokeStyle = 'orange';
+            ctx.moveTo(140, 60);
+            ctx.lineTo(120, 70);
+            ctx.stroke();
+
+            ctx.beginPath()
+            ctx.strokeStyle = 'borange';
+            ctx.moveTo(140, 60);
+            ctx.lineTo(160, 70);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgb(255,192,7)';
+            ctx.moveTo(140, 58);
+            ctx.lineTo(140, 90);
+            ctx.stroke();
+        break;
+
+        case 6:
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.moveTo(140, 90);
+            ctx.lineTo(120, 100);
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.moveTo(140, 90);
+            ctx.lineTo(160, 100);
+            ctx.stroke();     
+            alert('Vous avez perdu la partie !!')    
+        break;
+        default: alert('Vous avez perdu la partie !!')
+
     }
 }
 
@@ -101,12 +184,6 @@ function checkIfGameLost(){
     }
 }
 
-//Hangman Picture, Canvas
-
-const ctx = canvas.getContext('2d');
-ctx.fillStyle = 'green';
-ctx.fillRect(10, 10, 20, 20, 12, 13);
-
 // updateHangmanPicture(){
 //     document.getElementById('hangmanPic').src = './images/' + errors + '.jpg';
 // }
@@ -126,7 +203,9 @@ function updateMistakes(){
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
 
-
+function clearCanvas (){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
 //renitialisation 
 
 refresh.addEventListener('click', reset);
@@ -142,13 +221,23 @@ function reset(){
     randomWord();
     generateButtons();
     guessWord();
-    
-  
+    clearCanvas();
+    clearCanvas ()
     message.classList.add('message');
+
+    
 }
 
-randomWord();
+    randomWord();
     generateButtons();
     guessWord();
 
 
+    // //switch sur les fragment du Man
+
+    // // hangman.addEventListener('click', () =>{
+        
+    // //         compteur++;
+        
+            
+    //     })
