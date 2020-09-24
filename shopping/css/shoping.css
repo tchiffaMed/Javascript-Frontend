@@ -131,6 +131,8 @@ font-size: 100px;
 
     .tourno{
         width: 30%;
+        display: block;
+        margin: 3px auto;
         
     }
   }
