@@ -17,7 +17,7 @@ const cart = document.getElementById('cart');
     
     cartBtn.forEach(function(btn) {
         btn.addEventListener('click', function(event){
-
+            console.log(event.target);
 //cibler l'image
            let imageCard = event.target.parentElement.previousElementSibling; 
 
