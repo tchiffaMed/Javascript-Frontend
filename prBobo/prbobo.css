@@ -41,7 +41,7 @@ header .material-icons, .hed{
     border-left:solid 8px #f1f1f1;
     border-right:solid 8px #f1f1f1;
     font-size: 1.4rem;
-    margin: 150px auto;
+    margin: 110px auto;
     max-width: 60%;
     overflow-wrap: break-word;
     background: #f7f7f727;
@@ -243,7 +243,7 @@ section p
 .ico{
     text-align: right;
     max-width: 60%;
-    margin: 150px auto;
+    margin: 80px auto;
 }
 
 .ico .material-icons{
@@ -263,7 +263,6 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    
     font-family: 'Tomorrow', sans-serif;
 
 }
@@ -278,13 +277,14 @@ footer{
     }
 
     .circle.circle2 {
-        width: 120px;
+    width: 120px;
     height: 120px;
     margin: 5px;
     }
   
     footer {
-      height:10px;
+      height:30px;
+      padding-bottom: 20px;
     }
     section p {
        font-size: smaller;

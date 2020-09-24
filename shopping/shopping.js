@@ -1,4 +1,4 @@
-
+var total;
 //Afficher la partie info liste panier
 (function(){
 const cartInfo = document.getElementById('cart-info');
@@ -9,6 +9,7 @@ const cart = document.getElementById('cart');
     cart.classList.toggle('show-cart');
     });
 })();
+
 
 
 (function(){
@@ -34,12 +35,10 @@ const cart = document.getElementById('cart');
 
            harira.children[1].textContent= parseInt(harira.children[1].textContent) + prix;
 
-
-           document.getElementById('cart-total').textContent = harira.children[1].textContent;
+          total = document.getElementById('cart-total');
+           total.textContent = harira.children[1].textContent;
 // afficher le produit
            let mhd = document.getElementById('mhd');
-
-           supp()
 
            mhd.innerHTML+=`
             <div class="cart-item d-flex justify-content-between text-capitalize my-3">
@@ -52,21 +51,37 @@ const cart = document.getElementById('cart');
                         <span> Fcfa</span>
                     </div>
 
-                    <a href="#" id='cart-item-remove' class="cart-item-remove">
+                    <a href="#"  class="cart-item-remove" onclick='deleting(this)'>
                     <img src="i/trash.svg">
                     </a>
             </div>
            `;
- 
+            
+           let clearCart = document.getElementById('clear-cart');
+            clearCart.addEventListener('click', function(e){
+                mhd.innerHTML = "";
+                total.textContent = 0;
+                harira.children[0].textContent= 0;
+                harira.children[1].textContent= 0;
+            })
+            
+          
+    
         }); 
         
     });
-function supp(){
-        let rem = document.getElementById('cart-item-remove');
-            //(mhd.children[0].lastElementChild.children)
-            
-        (rem || missing).addEventListener('click', console.log('oui'));
-           };
 }
-           
 )();
+
+function deleting(e){
+
+    total.textContent = parseInt(total.textContent) - parseInt(e.previousElementSibling.children[1].textContent);
+    e.parentElement.remove();
+    harira.children[0].textContent= parseInt(harira.children[0].textContent)- 1;
+    harira.children[1].textContent= total.textContent;
+    console.log(total.textContent);
+}
+
+
+   
+    
