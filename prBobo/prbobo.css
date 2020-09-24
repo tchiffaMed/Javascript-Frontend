@@ -269,11 +269,18 @@ footer{
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
 
-    .circle .circle1 img{
-        width:2% ;
-        height: 10%;
+     .circle.circle1 {
+        width:200px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .circle.circle2 {
+        width: 120px;
+    height: 120px;
+    margin: 5px;
     }
   
     footer {
@@ -284,7 +291,8 @@ footer{
       }
 
       section h2{
-        font-size: 10%;
+        font-size: 2rem;
+        padding-top: 100px;
        }
 
   }
