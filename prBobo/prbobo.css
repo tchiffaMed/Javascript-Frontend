@@ -178,7 +178,7 @@ section
     background: #fdfdfd;
     color: #e9967a;
     max-width: 60%;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 15px;
     border-bottom: #ff6229 10px solid;
 
@@ -235,7 +235,13 @@ section p
     height: 586px;
 }
 
-
+.bas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
 
 
 /*icons j'aime*/
@@ -243,12 +249,12 @@ section p
 .ico{
     text-align: right;
     max-width: 60%;
-    margin: 80px auto;
+    
 }
 
 .ico .material-icons{
     font-size: 50px;
-    margin-left: 20px;
+
     color:#f85033 ;
     text-shadow:  10px 10px 20px #eb754a, 
     -10px -10px 20px #ff8956;
