@@ -186,3 +186,14 @@ font-size: 100px;
         margin-top: 0px;
     }
   }
+
+  .store-item-value{
+    box-shadow:  3px 3px 16px #ebeaea, 
+    -3px -3px 16px #ebeaea;    padding: 4px;
+    padding-top: 8px;
+    border-radius: 8px;
+  }
+
+  .fa-male, .fa-female{
+      color: #6200ea;
+  }
