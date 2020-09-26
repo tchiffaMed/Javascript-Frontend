@@ -41,7 +41,7 @@ header .material-icons, .hed{
     border-left:solid 8px #f1f1f1;
     border-right:solid 8px #f1f1f1;
     font-size: 1.4rem;
-    margin: 110px auto;
+    margin: 30px auto;
     max-width: 60%;
     overflow-wrap: break-word;
     background: #f7f7f727;
@@ -55,12 +55,12 @@ header .material-icons, .hed{
     display: flex;
     justify-content: center;
     max-width: 60%;
-    margin: 100px auto;
+    margin: 0px auto;
 
 }
 .cli a {
-    font-size: large;
-    padding:20px 40px;
+    font-size: 0.6rem;
+    padding:0.5rem 1.3rem;
     font-family: 'Mitr', sans-serif;
     background: rgba(255, 255, 255, .1);
     text-transform: uppercase;
@@ -243,6 +243,20 @@ section p
     margin-bottom: 100px;
 }
 
+.navigate {
+    color: white;
+    font-family: 'Mitr', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: rgb(255, 255, 255) solid 1px; padding: 15px;border-radius: 8px;
+}
+
+.indexr{
+    margin-top: 50px;
+}
+
 
 /*icons j'aime*/
 
@@ -274,31 +288,59 @@ footer{
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
 
      .circle.circle1 {
-        width:200px;
-        height: 200px;
-        margin: 5px;
+        max-width:38vw ;
+        max-height: 38vw;
+        margin: 10vw;
     }
 
     .circle.circle2 {
-    width: 120px;
-    height: 120px;
-    margin: 5px;
+    width: 26vw;
+    height: 26vw;
+    margin-top: 30vw ;
+    margin-right: 12vw;
+    margin-left: 17vw;
+    margin-bottom: 30vw ;
+
+   
     }
   
     footer {
       height:30px;
       padding-bottom: 20px;
     }
-    section p {
+
+    section  {
+        max-width: 96%;
+        margin: 10px auto;
+        padding: 2px; 
+       }
+    
+     p {
        font-size: smaller;
+       padding: 6px;
+       margin-left: 15px;
+       margin-right: 15px;
+       
+
       }
 
       section h2{
         font-size: 2rem;
-        padding-top: 100px;
+        padding-top: 5px;
+        margin-left: 15px;
        }
 
+
+       .ico .material-icons{
+        font-size: 30px;}
+
+        .navigate {
+            font-size: 12px;
+            padding: 7px;
+            margin-top:12px;
+            
+        }
   }
