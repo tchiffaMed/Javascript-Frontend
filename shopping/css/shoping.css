@@ -120,7 +120,42 @@ font-size: 100px;
     src: url('Stay.otf');
 }
 
-@media  screen and (max-width: 500px) {
+
+  @media  screen and (min-width: 768px) and (min-width: 500px) {
+    .tourno span{
+        transform: rotateY(calc(var(--i)*45deg )) translateZ(280px);
+    }
+    .conso{
+            margin-top: 70px;
+            margin-bottom: 0px;
+           top: 0px;
+        }
+    .conso h1{
+        font-size: 50px;
+    }
+    .conso h6{
+        font-size: 30px;
+    }
+    .discover{
+        font-size: 100px;
+        margin-top: 0px;
+    }
+  }
+
+  .store-item-value{
+    box-shadow:  3px 3px 16px #ebeaea, 
+    -3px -3px 16px #ebeaea;    padding: 4px;
+    padding-top: 8px;
+    border-radius: 8px;
+  }
+
+  .fa-male, .fa-female{
+      color: #6200ea;
+  }
+
+
+
+  @media  screen and (max-width: 500px) {
 
     .tourno
     {
@@ -153,10 +188,10 @@ font-size: 100px;
            top: 0px;
         }
     .conso h1{
-        font-size: 30px;
+        font-size: 1.7em;
     }
     .conso h6{
-        font-size: 19px;
+        font-size: 0.9em;
     }
     .discover{
         font-size: 50px;
@@ -166,34 +201,8 @@ font-size: 100px;
     
   }
 
-  @media  screen and (max-width: 768px) {
-    .tourno span{
-        transform: rotateY(calc(var(--i)*45deg )) translateZ(280px);
-    }
-    .conso{
-            margin-top: 70px;
-            margin-bottom: 0px;
-           top: 0px;
-        }
-    .conso h1{
-        font-size: 50px;
-    }
-    .conso h6{
-        font-size: 30px;
-    }
-    .discover{
-        font-size: 100px;
-        margin-top: 0px;
-    }
-  }
 
-  .store-item-value{
-    box-shadow:  3px 3px 16px #ebeaea, 
-    -3px -3px 16px #ebeaea;    padding: 4px;
-    padding-top: 8px;
-    border-radius: 8px;
-  }
-
-  .fa-male, .fa-female{
-      color: #6200ea;
+  .z{
+    background-color: linear-gradient(to right, #8e2de2, #4a00e0);
+    padding: 10px;
   }
